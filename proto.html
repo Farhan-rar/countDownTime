@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTO</title>
+</head>
+<body>
+
+
+    <script>
+
+        function Car(jenisMobil, tipeMobil, tipeBensin) {
+            this.jenisMobil = jenisMobil;
+            this.tipeMobil = tipeMobil;
+            this.tipeBensin = tipeBensin;
+            this.sayHello = function(name) {
+                console.info(`Hello ${name} Mobil ada berbahan bakar ${tipeBensin}`)
+            }
+        }
+
+        const farhan = new Car("Civic", "Matic", "Pertamax");
+        farhan.sayHello("Farhan")
+
+        Car.prototype.rusakJiwa = function () {
+            console.info("Mobil anda Rusak")
+        }
+
+        Car.prototype.benerJiwa = function () {
+            console.log("Mobil anda Benar")
+        }
+
+        const paul = new Car("Tesla", "Auto", "Listrik");
+ 
+        console.log(farhan);
+        console.log(paul);
+
+</script>
+</body>
+</html>
