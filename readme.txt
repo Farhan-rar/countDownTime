@@ -1,1 +1,6 @@
+XXdme.txt
+
 https://youtu.be/KAoTe1wgeGk
+
+KU PEKERJA KREATIF FREELANCE KERJAANKU
+
